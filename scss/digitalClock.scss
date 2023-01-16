@@ -1,0 +1,98 @@
+.digital--clock {
+  background-color: $clockBackground;
+  grid-column: 1 / 2;
+  grid-row: 1;
+  width: 1060px;
+  height: 300px;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-column-gap: 10px;
+  margin: auto 10%;
+  padding: 10px 25px 10px 25px;
+
+
+  .number--container{
+    width: $numberBlockWidth;
+    height: 2 * $numberBlockHeight;
+
+    .number--block--up {
+      width: $numberBlockWidth;
+      height: $numberBlockHeight;
+      border-top: $borderTop;
+      border-right: $borderRight;
+      border-bottom: $borderBottomHalf;
+      border-left: $borderLeft;
+    }
+
+    .number--block--down {
+      width: $numberBlockWidth;
+      height: $numberBlockHeight;
+      border-top: $borderTopHalf;
+      border-right: $borderRight;
+      border-bottom: $borderBottom;
+      border-left: $borderLeft;
+    }
+  }
+  .hour--first {
+    grid-column: 1;
+  }
+
+  .hour--second {
+    grid-column: 2;
+  }
+
+  .colon--spacing {
+    width: 50px;
+    height: 2 * $numberBlockHeight;
+
+    .number--spacing--up {
+      height: $numberBlockHeight;
+      width: 50px;
+
+      .number--circle {
+        margin: 50px auto;
+        height: 40px;
+        width: 40px;
+        background-color: $filledBarColor;
+        border-radius: 50%;
+      }
+    }
+
+    .number--spacing--down {
+      height: $numberBlockHeight;
+      width: 50px;
+
+      .number--circle {
+        margin: 0 auto;
+        height: 40px;
+        width: 40px;
+        background-color: $filledBarColor;
+        border-radius: 50%;
+      }
+    }
+  }
+
+  .colon--spacing:first-of-type {
+    grid-column: 3;
+  }
+
+  .colon--spacing:last-of-type {
+    grid-column: 6;
+  }
+
+  .minutes--first {
+    grid-column: 4;
+  }
+
+  .minutes--second {
+    grid-column: 5;
+  }
+
+  .seconds--first {
+    grid-column: 7;
+  }
+
+  .seconds--second {
+    grid-column: 8;
+  }
+}

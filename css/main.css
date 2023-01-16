@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Arimo:wght@500&display=swap");
+.digital--clock {
+  background-color: #171717;
+  grid-column: 1 / 2;
+  grid-row: 1;
+  width: 1060px;
+  height: 300px;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-column-gap: 10px;
+  margin: auto 10%;
+  padding: 10px 25px 10px 25px;
+}
+
+.digital--clock .number--container {
+  width: 140px;
+  height: 280px;
+}
+
+.digital--clock .number--container .number--block--up {
+  width: 140px;
+  height: 140px;
+  border-top: 20px #ee9906 solid;
+  border-right: 20px #ee9906 solid;
+  border-bottom: 10px #ee9906 solid;
+  border-left: 20px #ee9906 solid;
+}
+
+.digital--clock .number--container .number--block--down {
+  width: 140px;
+  height: 140px;
+  border-top: 10px #ee9906 solid;
+  border-right: 20px #ee9906 solid;
+  border-bottom: 20px #ee9906 solid;
+  border-left: 20px #ee9906 solid;
+}
+
+.digital--clock .hour--first {
+  grid-column: 1;
+}
+
+.digital--clock .hour--second {
+  grid-column: 2;
+}
+
+.digital--clock .colon--spacing {
+  width: 50px;
+  height: 280px;
+}
+
+.digital--clock .colon--spacing .number--spacing--up {
+  height: 140px;
+  width: 50px;
+}
+
+.digital--clock .colon--spacing .number--spacing--up .number--circle {
+  margin: 50px auto;
+  height: 40px;
+  width: 40px;
+  background-color: #ee9906;
+  border-radius: 50%;
+}
+
+.digital--clock .colon--spacing .number--spacing--down {
+  height: 140px;
+  width: 50px;
+}
+
+.digital--clock .colon--spacing .number--spacing--down .number--circle {
+  margin: 0 auto;
+  height: 40px;
+  width: 40px;
+  background-color: #ee9906;
+  border-radius: 50%;
+}
+
+.digital--clock .colon--spacing:first-of-type {
+  grid-column: 3;
+}
+
+.digital--clock .colon--spacing:last-of-type {
+  grid-column: 6;
+}
+
+.digital--clock .minutes--first {
+  grid-column: 4;
+}
+
+.digital--clock .minutes--second {
+  grid-column: 5;
+}
+
+.digital--clock .seconds--first {
+  grid-column: 7;
+}
+
+.digital--clock .seconds--second {
+  grid-column: 8;
+}
+
+* {
+  margin: 0 auto;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  background-color: #171717;
+}
+
+.main--container {
+  width: available;
+  height: 100%;
+  margin: 3% 5% 3% 5%;
+  padding: 3% auto;
+}
+
+.main--container .time--container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 5px;
+  grid-auto-rows: minmax(100px, auto);
+  height: 400px;
+  width: 100%;
+}
+
+.main--container .date--container {
+  color: #ee9906;
+  font-family: 'Arimo', Arial, sans-serif;
+  font-size: 1.5em;
+  margin: auto 10%;
+  background-color: #171717;
+  text-align: center;
+}
+
+/*# sourceMappingURL=main.css.map */

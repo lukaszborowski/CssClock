@@ -1,0 +1,37 @@
+@import "variables.scss";
+@import "digitalClock.scss";
+@import url('https://fonts.googleapis.com/css2?family=Arimo:wght@500&display=swap');
+
+* {
+  margin: 0 auto;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  background-color: $clockBackground;
+}
+
+.main--container {
+  width: available;
+  height: 100%;
+  margin: 3% 5% 3% 5%;
+  padding: 3% auto;
+
+  .time--container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 5px;
+    grid-auto-rows: minmax(100px, auto);
+    height: 400px;
+    width: 100%;
+  }
+
+  .date--container {
+    color: $filledBarColor;
+    font-family: 'Arimo', Arial, sans-serif;
+    font-size: 1.5em;
+    margin: auto 10%;
+    background-color: $clockBackground;
+    text-align: center;
+
+  }
+}
